@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/FloradaleReduced.jpg',
-        width: 1200,
-        height: 630,
+        width: 1000,
+        height: 666,
         alt: 'Aerial view of Lompoc Valley Agricultural Estate showing 612 acres of prime farmland',
       },
     ],
