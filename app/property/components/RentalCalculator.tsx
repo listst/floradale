@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Calculator, DollarSign, TrendingUp } from 'lucide-react';
-import { saveRentalRate, loadRentalRate } from '@/lib/supabase';
 
 interface RentalCalculatorProps {
   farmableAcres: number;
@@ -11,23 +10,6 @@ interface RentalCalculatorProps {
 
 export default function RentalCalculator({ farmableAcres, configName }: RentalCalculatorProps) {
   const [rentalRate, setRentalRate] = useState(3000);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    loadRentalRate().then((rate) => {
-      if (rate) setRentalRate(rate);
-      setIsLoading(false);
-    });
-  }, []);
-
-  useEffect(() => {
-    if (!isLoading) {
-      const timer = setTimeout(() => {
-        saveRentalRate(rentalRate);
-      }, 1000);
-      return () => clearTimeout(timer);
-    }
-  }, [rentalRate, isLoading]);
 
   const annualIncome = farmableAcres * rentalRate;
 
