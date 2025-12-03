@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { DM_Serif_Display, Source_Sans_3 } from 'next/font/google';
 import './globals.css';
 
@@ -17,6 +17,7 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://floradale.vercel.app'),
   title: 'Lompoc Valley Agricultural Estate | Santa Barbara County',
   description: '612-acre premier agricultural estate in Santa Barbara County with multiple configuration options from $5.5M to $15.6M. Turnkey operations, comprehensive infrastructure, and proven income potential.',
   robots: {
@@ -27,6 +28,36 @@ export const metadata: Metadata = {
       follow: false,
     },
   },
+  openGraph: {
+    title: 'Lompoc Valley Agricultural Estate',
+    description: '612-acre premier agricultural estate in Santa Barbara County. Multiple configuration options from $5.5M to $15.6M. Turnkey operations with proven income potential.',
+    url: 'https://floradale.vercel.app',
+    siteName: 'Floradale Properties',
+    images: [
+      {
+        url: '/FloradaleReduced.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Aerial view of Lompoc Valley Agricultural Estate showing 612 acres of prime farmland',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lompoc Valley Agricultural Estate',
+    description: '612-acre premier agricultural estate in Santa Barbara County. Multiple configurations from $5.5M to $15.6M.',
+    images: ['/FloradaleReduced.jpg'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#1a2e1f',
 };
 
 export default function RootLayout({
