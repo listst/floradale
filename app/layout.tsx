@@ -19,6 +19,14 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   title: 'Lompoc Valley Agricultural Estate | Santa Barbara County',
   description: '612-acre premier agricultural estate in Santa Barbara County with multiple configuration options from $5.5M to $15.6M. Turnkey operations, comprehensive infrastructure, and proven income potential.',
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({
