@@ -10,7 +10,7 @@ export default function ContactSection({ configName }: ContactSectionProps) {
   const subject = encodeURIComponent(
     `Inquiry: Lompoc Valley Agricultural Estate - ${configName}`
   );
-  const mailtoLink = `mailto:info@floradaleproperties.com?subject=${subject}`;
+  const mailtoLink = `mailto:team@allanrealestate.com?subject=${subject}`;
 
   return (
     <section className="py-20 relative overflow-hidden">
@@ -44,12 +44,12 @@ export default function ContactSection({ configName }: ContactSectionProps) {
             </div>
             <h3 className="font-display text-lg text-white mb-2">Email</h3>
             <p className="text-gold-400 group-hover:text-gold-300 transition-colors">
-              info@floradaleproperties.com
+              team@allanrealestate.com
             </p>
           </a>
 
           <a
-            href="tel:+18059244000"
+            href="tel:+18054737500"
             className="card card-hover p-6 text-center group"
           >
             <div className="inline-flex items-center justify-center w-14 h-14 bg-gold-500/20 rounded-xl mb-4 group-hover:bg-gold-500/30 transition-colors">
@@ -57,7 +57,7 @@ export default function ContactSection({ configName }: ContactSectionProps) {
             </div>
             <h3 className="font-display text-lg text-white mb-2">Phone</h3>
             <p className="text-gold-400 group-hover:text-gold-300 transition-colors">
-              (805) 924-4000
+              (805) 473-7500
             </p>
           </a>
 
@@ -67,7 +67,7 @@ export default function ContactSection({ configName }: ContactSectionProps) {
             </div>
             <h3 className="font-display text-lg text-white mb-2">Location</h3>
             <p className="text-forest-300">
-              Lompoc Valley<br />Santa Barbara County, CA
+              901 Floradale Avenue<br />Lompoc, CA 93436
             </p>
           </div>
         </div>
