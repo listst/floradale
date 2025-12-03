@@ -15,7 +15,7 @@ export default function ContactSection({ configName }: ContactSectionProps) {
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-forest-950 via-forest-900 to-forest-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-forest-950 via-forest-900/40 to-forest-950" />
       
       {/* Decorative elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-gold-500/10 via-transparent to-transparent blur-3xl" />

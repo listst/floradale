@@ -69,9 +69,11 @@ const buyerProfiles = [
 
 export default function BuyerProfiles() {
   return (
-    <section className="py-20 bg-forest-900/30 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden">
+      {/* Background gradient matching other sections */}
+      <div className="absolute inset-0 bg-gradient-to-b from-forest-950 via-forest-900/40 to-forest-950" />
       {/* Subtle pattern */}
-      <div className="absolute inset-0 bg-dots-pattern opacity-30" />
+      <div className="absolute inset-0 bg-dots-pattern opacity-20" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section header */}
