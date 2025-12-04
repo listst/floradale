@@ -34,16 +34,11 @@ export default function MarketContext() {
                   Robust Agricultural Economy
                 </h3>
               </div>
-              <p className="text-forest-200 leading-relaxed mb-4">
+              <p className="text-forest-200 leading-relaxed">
                 Santa Barbara County generates <span className="text-gold-400 font-semibold">$2.01 billion</span> in annual agricultural
                 production value, ranking among California's top agricultural counties. The region's
                 diverse crop production and established supply chains provide stable market access.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge-forest">Top 10 CA County</span>
-                <span className="badge-forest">Diverse Crops</span>
-                <span className="badge-forest">Strong Markets</span>
-              </div>
             </div>
           </div>
 
@@ -59,16 +54,11 @@ export default function MarketContext() {
                   Extended Growing Season
                 </h3>
               </div>
-              <p className="text-forest-200 leading-relaxed mb-4">
+              <p className="text-forest-200 leading-relaxed">
                 With an average of <span className="text-gold-400 font-semibold">259 frost-free days</span> annually, the Lompoc Valley
                 offers one of California's longest growing seasons. The moderate coastal climate allows
                 for multiple crop cycles and premium quality production year-round.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="badge-forest">259 Frost-Free Days</span>
-                <span className="badge-forest">Coastal Climate</span>
-                <span className="badge-forest">Year-Round</span>
-              </div>
             </div>
           </div>
         </div>
@@ -76,15 +66,18 @@ export default function MarketContext() {
         {/* Secondary cards */}
         <div className="grid md:grid-cols-2 gap-6">
           {/* Proven Production */}
-          <div className="card card-hover p-6 flex items-start gap-5">
-            <div className="w-12 h-12 rounded-lg bg-forest-700/50 flex items-center justify-center shrink-0">
-              <Leaf className="w-6 h-6 text-forest-300" />
-            </div>
-            <div>
-              <h3 className="text-xl font-display text-white mb-2">
-                Proven Production Success
-              </h3>
-              <p className="text-forest-300 leading-relaxed text-sm">
+          <div className="card card-hover p-8 relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-5">
+                <div className="w-14 h-14 rounded-xl bg-gold-500/20 flex items-center justify-center">
+                  <Leaf className="w-7 h-7 text-gold-400" />
+                </div>
+                <h3 className="text-2xl font-display text-white">
+                  Proven Production Success
+                </h3>
+              </div>
+              <p className="text-forest-200 leading-relaxed">
                 Currently leased to major vegetable growers with established operations, demonstrating
                 the property's productivity and market viability. The existing tenant relationship
                 provides continuity and proven income potential for new ownership.
@@ -93,15 +86,18 @@ export default function MarketContext() {
           </div>
 
           {/* Expanding Opportunities */}
-          <div className="card card-hover p-6 flex items-start gap-5">
-            <div className="w-12 h-12 rounded-lg bg-forest-700/50 flex items-center justify-center shrink-0">
-              <Award className="w-6 h-6 text-forest-300" />
-            </div>
-            <div>
-              <h3 className="text-xl font-display text-white mb-2">
-                Expanding Opportunities
-              </h3>
-              <p className="text-forest-300 leading-relaxed text-sm">
+          <div className="card card-hover p-8 relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-gold-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-5">
+                <div className="w-14 h-14 rounded-xl bg-gold-500/20 flex items-center justify-center">
+                  <Award className="w-7 h-7 text-gold-400" />
+                </div>
+                <h3 className="text-2xl font-display text-white">
+                  Expanding Opportunities
+                </h3>
+              </div>
+              <p className="text-forest-200 leading-relaxed">
                 Santa Barbara County's New Agricultural Enterprise Ordinance expands permitted uses
                 beyond traditional farming, allowing agritourism, farm-to-table operations, and
                 agricultural processing. Adjacent to the prestigious Sta. Rita Hills AVA wine region.
