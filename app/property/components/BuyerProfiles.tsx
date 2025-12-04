@@ -54,10 +54,10 @@ const buyerProfiles = [
     investment: '$4,800,000',
     description: '39-acre strategic package emphasizing labor housing and equipment infrastructure. Perfect for operators who need H-2A housing capacity and support facilities.',
     advantages: [
-      '48 units of certified H-2A worker housing',
-      'Lowest entry price point',
+      'H-2A housing for up to 100 workers',
       'Essential infrastructure for labor-intensive operations',
-      '8,000 sq ft equipment storage',
+      '8,000 sq ft of product storage',
+      'Manager residence, shop and office space',
       'Immediate housing solution for seasonal programs'
     ],
   },
