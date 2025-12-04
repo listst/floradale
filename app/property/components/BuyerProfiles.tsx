@@ -1,4 +1,4 @@
-import { Building2, Tractor, Home, Users, ArrowRight } from 'lucide-react';
+import { Building2, Tractor, Home, ArrowRight } from 'lucide-react';
 
 const buyerProfiles = [
   {
@@ -6,8 +6,8 @@ const buyerProfiles = [
     icon: Building2,
     title: 'Institutional Investors',
     configuration: 'Full Estate',
-    investment: '$15.6M',
-    description: 'Complete 612-acre portfolio offering turnkey operations, comprehensive infrastructure, and maximum scale. Ideal for institutional capital seeking flagship agricultural assets with proven income streams.',
+    investment: '$15,608,000',
+    description: 'Complete 406-acre portfolio offering turnkey operations, comprehensive infrastructure, and maximum scale. Ideal for institutional capital seeking flagship agricultural assets with proven income streams.',
     advantages: [
       'Largest contiguous holding with full control',
       'Complete infrastructure minimizes additional capital needs',
@@ -15,31 +15,29 @@ const buyerProfiles = [
       'H-2A housing supports seasonal labor programs',
       'Diversification across multiple parcels'
     ],
-    highlight: true,
   },
   {
     id: 'apache-ranch',
     icon: Tractor,
     title: 'Agricultural Investors',
     configuration: 'Apache Ranch Only',
-    investment: '$8.8M',
+    investment: '$7,908,000',
     description: '320-acre pure production parcel focused on farmland value and agricultural returns. Perfect for investors prioritizing acreage and water rights without operational complexity.',
     advantages: [
-      '280 farmable acres with excellent water rights',
+      '125 farmable acres with excellent water',
       'Lower entry point for farmland investment',
       'Flexibility to lease or self-operate',
       'Prime soil quality for high-value crops',
       'Recent well infrastructure investment included'
     ],
-    highlight: false,
   },
   {
     id: 'home-ranch',
     icon: Home,
     title: 'Owner-Operators',
     configuration: 'Home Ranch Only',
-    investment: '$6.2M',
-    description: '160-acre ranch combining productive farmland with complete facilities including packing operations and residence. Ideal for hands-on operators seeking a manageable, self-contained operation.',
+    investment: '$7,700,000',
+    description: '77-acre ranch combining productive farmland with complete facilities including packing operations and residence. Ideal for hands-on operators seeking a manageable, self-contained operation.',
     advantages: [
       'Turnkey operation with packing facility',
       'On-site manager residence included',
@@ -47,24 +45,7 @@ const buyerProfiles = [
       'Complete infrastructure for direct marketing',
       'Maintenance shop supports equipment needs'
     ],
-    highlight: false,
   },
-  {
-    id: 'operations-housing',
-    icon: Users,
-    title: 'Agricultural Operators',
-    configuration: 'Operations & Housing',
-    investment: '$5.5M',
-    description: '132-acre strategic package emphasizing labor housing and equipment infrastructure. Perfect for operators who need H-2A housing capacity and support facilities.',
-    advantages: [
-      '48 units of certified H-2A worker housing',
-      'Lowest entry price point',
-      'Essential infrastructure for labor-intensive operations',
-      '8,000 sq ft equipment storage',
-      'Immediate housing solution for seasonal programs'
-    ],
-    highlight: false,
-  }
 ];
 
 export default function BuyerProfiles() {
@@ -88,31 +69,16 @@ export default function BuyerProfiles() {
         </div>
 
         {/* Profiles grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {buyerProfiles.map((profile) => (
             <div
               key={profile.id}
-              className={`card card-hover p-8 relative overflow-hidden transition-all duration-300 ${
-                profile.highlight ? 'ring-2 ring-gold-500/30' : ''
-              }`}
+              className="card card-hover p-8 relative overflow-hidden transition-all duration-300"
             >
-              {/* Highlight badge */}
-              {profile.highlight && (
-                <div className="absolute top-4 right-4">
-                  <span className="badge-gold text-xs">Most Popular</span>
-                </div>
-              )}
-
               {/* Icon and header */}
               <div className="flex items-start gap-4 mb-6">
-                <div className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${
-                  profile.highlight 
-                    ? 'bg-gold-500/20' 
-                    : 'bg-forest-700/50'
-                }`}>
-                  <profile.icon className={`w-7 h-7 ${
-                    profile.highlight ? 'text-gold-400' : 'text-forest-300'
-                  }`} />
+                <div className="w-14 h-14 rounded-xl flex items-center justify-center shrink-0 bg-forest-700/50">
+                  <profile.icon className="w-7 h-7 text-forest-300" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-display text-white mb-1">
