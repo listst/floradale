@@ -1,4 +1,4 @@
-import { Building2, Tractor, Home, ArrowRight } from 'lucide-react';
+import { Building2, Tractor, Home, Users, ArrowRight } from 'lucide-react';
 
 const buyerProfiles = [
   {
@@ -46,6 +46,21 @@ const buyerProfiles = [
       'Maintenance shop supports equipment needs'
     ],
   },
+  {
+    id: 'operations-housing',
+    icon: Users,
+    title: 'Agricultural Operators',
+    configuration: 'Operations & Housing',
+    investment: '$4,800,000',
+    description: '39-acre strategic package emphasizing labor housing and equipment infrastructure. Perfect for operators who need H-2A housing capacity and support facilities.',
+    advantages: [
+      '48 units of certified H-2A worker housing',
+      'Lowest entry price point',
+      'Essential infrastructure for labor-intensive operations',
+      '8,000 sq ft equipment storage',
+      'Immediate housing solution for seasonal programs'
+    ],
+  },
 ];
 
 export default function BuyerProfiles() {
@@ -69,7 +84,7 @@ export default function BuyerProfiles() {
         </div>
 
         {/* Profiles grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {buyerProfiles.map((profile) => (
             <div
               key={profile.id}

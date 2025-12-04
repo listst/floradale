@@ -61,12 +61,12 @@ export default function ContactSection({ configName }: ContactSectionProps) {
             </p>
           </a>
 
-          <div className="card p-6 text-center">
-            <div className="inline-flex items-center justify-center w-14 h-14 bg-forest-700/50 rounded-xl mb-4">
-              <MapPin className="w-7 h-7 text-forest-300" />
+          <div className="card card-hover p-6 text-center group">
+            <div className="inline-flex items-center justify-center w-14 h-14 bg-gold-500/20 rounded-xl mb-4 group-hover:bg-gold-500/30 transition-colors">
+              <MapPin className="w-7 h-7 text-gold-400" />
             </div>
             <h3 className="font-display text-lg text-white mb-2">Location</h3>
-            <p className="text-forest-300">
+            <p className="text-gold-400">
               901 Floradale Avenue<br />Lompoc, CA 93436
             </p>
           </div>
