@@ -33,7 +33,7 @@ export default function PropertyDetails({ config }: PropertyDetailsProps) {
                   <div className="flex justify-between items-start mb-2">
                     <div>
                       <p className="font-semibold text-white">Parcel {index + 1}</p>
-                      <p className="text-sm text-forest-400">APN: {parcel.apn}</p>
+                      <p className="text-sm text-forest-400">{parcel.apn}</p>
                     </div>
                     <div className="text-right">
                       <p className="font-semibold text-white">{parcel.acres} acres</p>
@@ -50,7 +50,7 @@ export default function PropertyDetails({ config }: PropertyDetailsProps) {
               <div className="flex justify-between items-center">
                 <span className="font-display text-lg text-white">Total</span>
                 <div className="text-right">
-                  <p className="font-display text-2xl text-white">{config.totalAcres} acres</p>
+                  <p className="font-display text-2xl text-white">{Number(config.totalAcres).toFixed(2)} acres</p>
                   <p className="text-gold-400">{config.farmableAcres} farmable</p>
                 </div>
               </div>
