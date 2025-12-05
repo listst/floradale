@@ -9,6 +9,9 @@ export interface Parcel {
   farmableAcres: number;
   overlayImage: string;
   color: string;
+  // Center coordinates as percentages (0-100) in the rotated/displayed landscape view
+  centerX: number;
+  centerY: number;
 }
 
 interface ParcelSelectorProps {

@@ -13,7 +13,10 @@ import ContactSection from './components/ContactSection';
 import AnimatedSection from './components/AnimatedSection';
 
 export default function PropertyPage() {
-  const [selectedParcels, setSelectedParcels] = useState<string[]>([]);
+  // Default all parcels to selected
+  const [selectedParcels, setSelectedParcels] = useState<string[]>(
+    () => individualParcels.map((p) => p.id)
+  );
   const mapSectionRef = useRef<HTMLDivElement>(null);
 
   const handleToggleParcel = (parcelId: string) => {
@@ -68,6 +71,7 @@ export default function PropertyPage() {
               <AerialMap 
                 selectedOverlays={selectedOverlays} 
                 hasSelection={selectedParcels.length > 0}
+                selectedParcels={individualParcels.filter((p) => selectedParcels.includes(p.id))}
               />
             </div>
           </AnimatedSection>
