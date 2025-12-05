@@ -71,7 +71,6 @@ export default function PropertyPage() {
               <AerialMap 
                 selectedOverlays={selectedOverlays} 
                 hasSelection={selectedParcels.length > 0}
-                selectedParcels={individualParcels.filter((p) => selectedParcels.includes(p.id))}
               />
             </div>
           </AnimatedSection>
