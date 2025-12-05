@@ -29,7 +29,7 @@ export const individualParcels: Parcel[] = [
     id: '093-070-055',
     name: '093-070-055',
     acres: 38.98,
-    farmableAcres: 40,
+    farmableAcres: 39,
     overlayImage: '/overlays/055.png',
     color: '#f59e0b'
   },
@@ -37,7 +37,7 @@ export const individualParcels: Parcel[] = [
     id: '093-070-058',
     name: '093-070-058',
     acres: 38.16,
-    farmableAcres: 30,
+    farmableAcres: 31,
     overlayImage: '/overlays/058.png',
     color: '#8b5cf6'
   }

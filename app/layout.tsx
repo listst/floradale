@@ -19,7 +19,7 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL('https://floradale.vercel.app'),
   title: 'Lompoc Valley Agricultural Estate | Santa Barbara County',
-  description: '406.7-acre premier agricultural estate in Santa Barbara County with multiple configuration options from $7.7M to $15.6M. Turnkey operations, comprehensive infrastructure, and proven income potential.',
+  description: '406.7-acre premier agricultural estate in Santa Barbara County with multiple configuration options from $4.8M to $15.6M. Turnkey operations, comprehensive infrastructure, and proven income potential.',
   robots: {
     index: false,
     follow: false,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Lompoc Valley Agricultural Estate',
-    description: '406.7-acre premier agricultural estate in Santa Barbara County. Multiple configuration options from $7.7M to $15.6M. Turnkey operations with proven income potential.',
+    description: '406.7-acre premier agricultural estate in Santa Barbara County. Multiple configuration options from $4.8M to $15.6M. Turnkey operations with proven income potential.',
     url: 'https://floradale.vercel.app',
     siteName: 'Floradale Properties',
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/jpeg',
-        alt: 'Aerial view of Lompoc Valley Agricultural Estate showing 612 acres of prime farmland',
+        alt: 'Aerial view of Lompoc Valley Agricultural Estate showing 406.7 acres of prime farmland',
       },
     ],
     locale: 'en_US',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Lompoc Valley Agricultural Estate',
-    description: '406.7-acre premier agricultural estate in Santa Barbara County. Multiple configurations from $7.7M to $15.6M.',
+    description: '406.7-acre premier agricultural estate in Santa Barbara County. Multiple configurations from $4.8M to $15.6M.',
     images: ['https://floradale.vercel.app/FloradaleReduced.jpg'],
   },
   icons: {

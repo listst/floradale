@@ -100,7 +100,7 @@ export default function MarketContext() {
               <p className="text-forest-200 leading-relaxed">
                 Santa Barbara County's New Agricultural Enterprise Ordinance expands permitted uses
                 beyond traditional farming, allowing agritourism, farm-to-table operations, and
-                agricultural processing. Adjacent to the prestigious Sta. Rita Hills AVA wine region.
+                agricultural processing. Near the prestigious Sta. Rita Hills AVA wine region.
               </p>
             </div>
           </div>

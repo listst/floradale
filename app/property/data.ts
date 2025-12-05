@@ -5,7 +5,7 @@ export const propertyConfigurations: PropertyConfiguration[] = [
     id: 'full-estate',
     name: 'Full Estate',
     shortName: 'Full Estate',
-    price: 15600000,
+    price: 15608000,
     priceFormatted: '$15.6M',
     totalAcres: 406.7,
     farmableAcres: 195,
@@ -18,8 +18,8 @@ export const propertyConfigurations: PropertyConfiguration[] = [
       { apn: '093-111-004', acres: 151.96, farmableAcres: 60, description: 'Apache Ranch - Primary production parcel' },
       { apn: '093-111-005', acres: 177.06, farmableAcres: 65, description: 'Apache Ranch - Secondary production parcel' },
       { apn: '093-070-053', acres: 0.55, farmableAcres: 0, description: 'Home Ranch - Support parcel' },
-      { apn: '093-070-055', acres: 38.98, farmableAcres: 40, description: 'Home Ranch - Includes main facilities' },
-      { apn: '093-070-058', acres: 38.16, farmableAcres: 30, description: 'Home Ranch - Operations area' }
+      { apn: '093-070-055', acres: 38.98, farmableAcres: 39, description: 'Home Ranch - Includes main facilities' },
+      { apn: '093-070-058', acres: 38.16, farmableAcres: 31, description: 'Home Ranch - Operations area' }
     ],
     features: [
       { icon: 'Droplets', title: '7 Agricultural Wells', description: '$350K recent investment in well infrastructure' },
@@ -53,8 +53,8 @@ export const propertyConfigurations: PropertyConfiguration[] = [
     id: 'apache-ranch',
     name: 'Apache Ranch Only',
     shortName: 'Apache Ranch',
-    price: 8800000,
-    priceFormatted: '$8.8M',
+    price: 7908000,
+    priceFormatted: '$7.9M',
     totalAcres: 329.02,
     farmableAcres: 125,
     parcelCount: 2,
@@ -87,8 +87,8 @@ export const propertyConfigurations: PropertyConfiguration[] = [
     id: 'home-ranch',
     name: 'Home Ranch Only',
     shortName: 'Home Ranch',
-    price: 6200000,
-    priceFormatted: '$6.2M',
+    price: 7700000,
+    priceFormatted: '$7.7M',
     totalAcres: 77.69,
     farmableAcres: 70,
     parcelCount: 3,
@@ -98,8 +98,8 @@ export const propertyConfigurations: PropertyConfiguration[] = [
     overlayImage: '/overlays/home-ranch.png',
     parcels: [
       { apn: '093-070-053', acres: 0.55, farmableAcres: 0, description: 'Home Ranch - Support parcel' },
-      { apn: '093-070-055', acres: 38.98, farmableAcres: 40, description: 'Home Ranch with main facilities and residence' },
-      { apn: '093-070-058', acres: 38.16, farmableAcres: 30, description: 'Home Ranch - Operations area' }
+      { apn: '093-070-055', acres: 38.98, farmableAcres: 39, description: 'Home Ranch with main facilities and residence' },
+      { apn: '093-070-058', acres: 38.16, farmableAcres: 31, description: 'Home Ranch - Operations area' }
     ],
     features: [
       { icon: 'Droplets', title: '2 Agricultural Wells', description: 'Reliable water supply for 70 farmable acres' },
@@ -127,21 +127,20 @@ export const propertyConfigurations: PropertyConfiguration[] = [
     id: 'operations-housing',
     name: 'Operations & Housing',
     shortName: 'Operations',
-    price: 5500000,
-    priceFormatted: '$5.5M',
-    totalAcres: 30,
-    farmableAcres: 15,
-    parcelCount: 2,
+    price: 4800000,
+    priceFormatted: '$4.8M',
+    totalAcres: 38.16,
+    farmableAcres: 31,
+    parcelCount: 1,
     buyerProfile: 'Agricultural Operators',
-    headline: '30-Acre Operations Center with H-2A Housing',
-    description: 'This strategic combination includes productive farmland, equipment storage, and H-2A certified worker housing for up to 100 workers. Perfect for operators who need housing infrastructure for seasonal labor programs.',
+    headline: '38-Acre Operations Center with H-2A Housing',
+    description: 'This strategic parcel includes productive farmland, equipment storage, and H-2A certified worker housing for up to 100 workers. Perfect for operators who need housing infrastructure for seasonal labor programs.',
     overlayImage: '/overlays/operations-housing.png',
     parcels: [
-      { apn: '093-070-055', acres: 15, farmableAcres: 10, description: 'Operations center with equipment storage' },
-      { apn: '093-070-058', acres: 15, farmableAcres: 5, description: 'H-2A housing complex' }
+      { apn: '093-070-058', acres: 38.16, farmableAcres: 31, description: 'H-2A housing complex with equipment storage' }
     ],
     features: [
-      { icon: 'Droplets', title: '1 Agricultural Well', description: 'Adequate water supply for 15 farmable acres' },
+      { icon: 'Droplets', title: '1 Agricultural Well', description: 'Adequate water supply for 31 farmable acres' },
       { icon: 'Home', title: 'H-2A Housing', description: 'Certified housing for up to 100 workers' },
       { icon: 'Truck', title: 'Equipment Storage', description: '8,000 sq ft covered storage facility' },
       { icon: 'Users', title: 'Labor Ready', description: 'Turnkey housing for H-2A visa program' }

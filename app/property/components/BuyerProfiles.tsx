@@ -9,7 +9,7 @@ const buyerProfiles = [
     investment: '$15,608,000',
     description: 'Complete 406-acre portfolio offering turnkey operations, comprehensive infrastructure, and maximum scale. Ideal for institutional capital seeking flagship agricultural assets with proven income streams.',
     advantages: [
-      'Largest contiguous holding with full control',
+      'Largest holding with full control',
       'Complete infrastructure minimizes additional capital needs',
       'Established tenant relationship provides immediate income',
       'H-2A housing supports seasonal labor programs',
@@ -22,7 +22,7 @@ const buyerProfiles = [
     title: 'Agricultural Investors',
     configuration: 'Apache Ranch Only',
     investment: '$7,908,000',
-    description: '320-acre pure production parcel focused on farmland value and agricultural returns. Perfect for investors prioritizing acreage and water rights without operational complexity.',
+    description: '329-acre pure production parcel focused on farmland value and agricultural returns. Perfect for investors prioritizing acreage and water rights without operational complexity.',
     advantages: [
       '125 farmable acres with excellent water',
       'Lower entry point for farmland investment',
@@ -58,7 +58,7 @@ const buyerProfiles = [
       'Essential infrastructure for labor-intensive operations',
       '8,000 sq ft of product storage',
       'Manager residence, shop and office space',
-      'Immediate housing solution for seasonal programs'
+      '31 farmable acres of productive land'
     ],
   },
 ];
